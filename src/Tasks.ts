@@ -1,7 +1,10 @@
 import Task from './Task';
 
 class Tasks{
-
+    /**
+     * Se plantea la clase de tal forma que sea modular y siguiendo el principio de responsabilidad única,
+     * utilizamos un Map para asegurar que no haya duplicados y facilitar la búsqueda.
+     */
     private tasks = new Map<string,Task>();
     constructor(private taksListName:string){
     }
